@@ -1,0 +1,63 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+}
+
+body > footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px 100px;
+}
+
+body > footer section > div {
+  width: 33%;
+}
+
+body > footer section > div:not(:nth-child(1)) {
+  margin-left: 24px;
+  border-left: 1px solid #d7d7d7;
+  padding-left: 24px;
+}
+
+body > footer h5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+body > footer a {
+  color: #e76868;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 13px 34px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn.primary {
+  background-color: #F8B653;
+}
+
+.s-text-lg {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.s-text-xl {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.s-text-2xl {
+  font-size: 40px;
+  line-height: 48px;
+}
+/*# sourceMappingURL=shared.css.map */

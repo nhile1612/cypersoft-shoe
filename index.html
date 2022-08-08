@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cypersoft Shoe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"
+        integrity="sha512-ipO1yoQyZS3BeIuv2A8C5AwQChWt2Pi4KU3nUvXxc4TKr8QgG8dPexPAj2JGsJD6yelwKa4c7Y2he9TTkPM4Dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="flex justify-between items-center px-6 py-2 bg-black text-white ">
+        <img src="assets/images/logo.png" alt="Logo">
+
+        <div class="flex items-center gap-3">
+            <span class="inline-flex items-center">
+                <img src="assets/images/cart.png" alt="Logo" class="h-[31px]">
+                <span class="text-[30px]">(1)</span>
+            </span>
+            <span>Login</span>
+            <span>Register</span>
+        </div>
+    </header>
+
+    <nav class="px-6 pt-4 s-text-lg">
+        <ul class="flex gap-6 leading-6">
+            <li class="pb-2.5 border-0 border-b border-solid border-black">Home</li>
+            <li class="pb-2.5 opacity-70">Men</li>
+            <li class="pb-2.5 opacity-70">Woman</li>
+            <li class="pb-2.5 opacity-70">Kid</li>
+            <li class="pb-2.5 opacity-70">Sport</li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="flex justify-between items-center px-[86px]">
+                        <img src="assets/images/banner.png" alt="Shoe banner">
+
+                        <div>
+                            <h2 class="s-text-2xl">Product name</h2>
+                            <p class="text-xl mb-4">Product description .....</p>
+
+                            <button class="btn primary text-white">Buy now</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="flex justify-between items-center px-[86px]">
+                        <img src="assets/images/banner.png" alt="Shoe banner">
+
+                        <div>
+                            <h2 class="s-text-2xl">Product name</h2>
+                            <p class="text-xl mb-4">Product description .....</p>
+
+                            <button class="btn primary text-white">Buy now</button>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="flex justify-between items-center px-[86px]">
+                        <img src="assets/images/banner.png" alt="Shoe banner">
+
+                        <div>
+                            <h2 class="s-text-2xl">Product name</h2>
+                            <p class="text-xl mb-4">Product description .....</p>
+
+                            <button class="btn primary text-white">Buy now</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="cursor-pointer absolute top-1/2 left-4 z-10" onclick="slideTo('left')">
+                <img src="assets/images/arrow-left.png" alt="">
+            </div>
+            <div class="cursor-pointer absolute top-1/2 right-4 z-10" onclick="slideTo('right')">
+                <img src="assets/images/arrow-right.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pt-[46px] pb-[104px]">
+        <h2 class="text-center s-text-2xl mb-[89px]">-Product Feature -</h2>
+
+        <ul class="flex flex-wrap justify-center gap-16" id="shoes">
+        </ul>
+    </section>
+
+    <footer>
+        <section>
+            <div>
+                <h5>GET HELP</h5>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Shopping</li>
+                    <li>NIKEiD</li>
+                    <li>Nike+</li>
+                </ul>
+            </div>
+            <div>
+                <h5>ORDERS</h5>
+                <ul>
+                    <li>Payment Options</li>
+                    <li>Shipping and delivery</li>
+                    <li>Returns</li>
+                </ul>
+            </div>
+            <div>
+                <h5>REGISTER</h5>
+                <p>Create one account to manage everything you do with Nike, from your shopping preferences to your
+                    Nike+ activity.</p>
+                <p><a href="#">Learn more</a></p>
+            </div>
+        </section>
+        <section class="bg-gray-100">
+            <div>
+                <h5>EMAIL SIGN UP</h5>
+                <p>Be the first to know about new products and special offers.</p>
+                <p><a href="#">Sign up now</a></p>
+            </div>
+            <div>
+                <h5>GIFT CARDS</h5>
+                <p>Give the gift that always fits.</p>
+                <p><a href="#">View cards</a></p>
+            </div>
+
+            <div>
+                <h5>STORES NEAR YOU</h5>
+                <p>Locate a Nike retail store or authorized retailer.</p>
+                <p><a href="#">Search</a></p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"
+        integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+        });
+
+        function slideTo(direction) {
+            if (direction === 'left')
+                swiper.slidePrev(1000, false);
+            else swiper.slideNext(1000, false);
+        }
+    </script>
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

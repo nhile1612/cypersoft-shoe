@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+.swiper-slide section {
+  height: 600px;
+  background-image: url(/assets/images/carousel-bottom.png);
+  background-position: bottom;
+  background-size: cover;
+}
+/*# sourceMappingURL=index.css.map */

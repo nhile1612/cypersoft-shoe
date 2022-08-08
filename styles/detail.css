@@ -1,0 +1,5 @@
+.bg-gradient {
+  background: -webkit-gradient(linear, right top, left top, color-stop(5.14%, rgba(62, 32, 248, 0.9)), color-stop(89.71%, #D017EE));
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+}
+/*# sourceMappingURL=detail.css.map */
